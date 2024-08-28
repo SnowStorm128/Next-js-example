@@ -13,6 +13,10 @@ import { fetchRevenue } from "@/app/lib/data";
 export default async function RevenueChart() {
   const revenue = await fetchRevenue();
 
+  console.log("before delay");
+  await new Promise((resolve) => setTimeout(resolve, 3000));
+  console.log("after delay");
+
   const chartHeight = 350;
 
   const { yAxisLabels, topLabel } = generateYAxis(revenue);
