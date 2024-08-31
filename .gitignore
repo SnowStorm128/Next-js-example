@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 # vim swap file
-.swp
+*.swp
